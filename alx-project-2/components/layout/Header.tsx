@@ -1,8 +1,17 @@
 import React from 'react'
+import home from '@/pages/home'
+import about from '@/pages/about'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </div>
   )
 }
 
