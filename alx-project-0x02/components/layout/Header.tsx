@@ -4,6 +4,7 @@ import about from '@/pages/about'
 
 function Header() {
   return (
+    
     <div>
         <nav>
             <ul>
