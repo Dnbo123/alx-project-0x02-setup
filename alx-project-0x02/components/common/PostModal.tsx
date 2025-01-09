@@ -1,6 +1,6 @@
 
 
-const PostModal = () => {
+export const PostModal = () => {
     return(
         <div>
             <div>
