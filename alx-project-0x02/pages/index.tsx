@@ -1,8 +1,15 @@
 import React from 'react'
 
-function index() {
+
+
+ const index = () => {
   return (
-    <div>Welcome to the project</div>
+    <div>
+      <div>Welcome to the project</div>
+     
+    </div>
+    
+    
   )
 }
 

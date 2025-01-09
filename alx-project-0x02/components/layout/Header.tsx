@@ -3,14 +3,15 @@ import Link from 'next/link'
 import home from '@/pages/home'
 import about from '@/pages/about'
 
-function Header() {
+export const Header = () => {
   return (
-    
     <div>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/posts">Posts</Link></li>
+                
             </ul>
         </nav>
     </div>
