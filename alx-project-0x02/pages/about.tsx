@@ -1,6 +1,5 @@
 import React from 'react'
-import  Button  from '@/components/common/Button'
-
+import Button from '@/components/common/Button'
 export function about() {
   return (
     <div>
@@ -19,6 +18,7 @@ export function about() {
         type="button">
           Cancel
           </button>
+          <Button />
     </div>
   )
 }
