@@ -21,7 +21,7 @@ export interface UserAddress {
     zipcode: string;
   }
 
-export interface UserCardProps {
+export interface UserProps {
     name: string;
     email: string;
     address: UserAddress;
