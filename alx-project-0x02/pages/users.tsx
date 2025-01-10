@@ -9,12 +9,9 @@ interface UsersPageProps {
 
 /**
  * The Users page displays a list of users from the API.
- * It is a server-rendered page that fetches data at build time.
  * The page is also revalidated every hour, so if the API data changes,
  * the page will be updated after an hour.
  *
- * @param {{ users: UserProps[] }} props - The props passed to the page
- * @returns The JSX for the page
  */
 const UsersPage: NextPage<UsersPageProps> = ({ users }) => {
     return (
@@ -44,7 +41,6 @@ const UsersPage: NextPage<UsersPageProps> = ({ users }) => {
  * Fetches user data from an external API at build time and returns it as props for the page.
  * This function is executed on the server-side and the data is revalidated every hour.
  *
- * @returns An object containing user data as props and the revalidation interval.
  */
 export const getStaticProps: GetStaticProps = async () => {
     try {
