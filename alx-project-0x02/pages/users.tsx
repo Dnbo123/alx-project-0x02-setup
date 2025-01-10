@@ -42,7 +42,7 @@ const UsersPage: NextPage<UsersPageProps> = ({ users }) => {
  * This function is executed on the server-side and the data is revalidated every hour.
  *
  */
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
     try {
         // Fetch user data from the API
         const response = await fetch('https://jsonplaceholder.typicode.com/users1');
