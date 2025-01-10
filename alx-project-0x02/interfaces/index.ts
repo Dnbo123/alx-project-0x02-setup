@@ -14,3 +14,17 @@ export interface PostProps {
     content: string;
     userId: number;
 }
+export interface UserAddress {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+  }
+
+export interface UserCardProps {
+    name: string;
+    email: string;
+    address: UserAddress;
+    phone: string;
+
+}
